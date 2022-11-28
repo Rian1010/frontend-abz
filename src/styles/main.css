@@ -2,4 +2,15 @@
 @import 'css/base/typo.css';
 
 @import 'css/layout/banner.css';
-@import 'css/layout/navbar.css';
+@import 'css/layout/features.css';
+@import 'css/layout/main-nav.css';
+@import 'css/layout/preview.css';
+@import 'css/layout/footer.css';
+
+@import 'css/module/brands.css';
+@import 'css/module/buttons.css';
+@import 'css/module/cards.css';
+@import 'css/module/main-nav-button.css';
+@import 'css/module/main-nav-item.css';
+@import 'css/module/main-nav-logo.css';
+@import 'css/module/preview-figure.css';
