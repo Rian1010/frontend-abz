@@ -28,7 +28,7 @@ h5 {
   color: #c6c6c6;
 }
 
-.l-features a {
+.l-features .card-body > a {
   font-family: 'PoppinsBold', Arial, Helvetica, Verdana;
   font-size: 0.8rem;
   font-weight: 800;

@@ -4,9 +4,8 @@
 }
 
 .l-main-nav li span {
-  background-color: var(--red);
+  background-color: #ff0000;
   font-size: 0.7rem;
-  /* color: var(--white); */
   padding-top: 0.1rem;
   padding-right: 0.5rem;
   padding-left: 0.5rem;

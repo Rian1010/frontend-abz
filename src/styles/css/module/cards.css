@@ -9,7 +9,3 @@
 .l-features .row > div:last-child .card-title::before {
   content: '🤩 ';
 }
-
-.l-features .row > div:not(:last-child) {
-  margin-bottom: 2.5rem;
-}

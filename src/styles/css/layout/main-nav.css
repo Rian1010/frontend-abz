@@ -1,5 +1,6 @@
 .l-main-nav {
-  padding-top: 1.3rem;
-  padding-bottom: 1.3rem;
   background-color: var(--black);
+  border-bottom-color: #424242;
+  border-bottom-width: 0.5px;
+  border-bottom-style: solid;
 }

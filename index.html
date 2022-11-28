@@ -11,7 +11,7 @@
   </head>
   <body>
     <header>
-      <nav class="l-main-nav navbar navbar-expand-lg navbar-dark">
+      <nav class="l-main-nav navbar navbar-expand-lg navbar-dark py-4">
         <div class="container">
           <a class="navbar-brand" href="/">
             <img src="src/images/logo-dummy.png" alt="logo" />
@@ -50,13 +50,22 @@
               <li class="nav-item">
                 <a
                   type="button"
-                  class="btn btn-primary d-lg-none align-self-start"
+                  class="
+                    btn btn-primary
+                    d-lg-none
+                    align-self-start
+                    my-2
+                    px-3
+                    d-inline
+                  "
                   >Sign Up</a
                 >
               </li>
             </ul>
           </div>
-          <a type="button" class="btn btn-primary d-none d-lg-block">Sign Up</a>
+          <a type="button" class="btn btn-primary d-none d-lg-block px-3">
+            Sign Up
+          </a>
         </div>
       </nav>
     </header>
@@ -88,18 +97,18 @@
                 drag and drop and the mockup is immediately ready to use
               </p>
               <div class="d-flex gap-3">
-                <a type="button" class="btn btn-primary" target="_blank">
-                  Try for free
+                <a type="button" class="btn btn-primary px-3" target="_blank">
+                  <span class="me-1">Try for free</span>
                   <i class="fa-sharp fa-solid fa-arrow-right" title="Link"></i>
                 </a>
-                <a type="button" class="btn btn-dark">Get app</a>
+                <a type="button" class="btn btn-dark px-3">Get app</a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="l-preview">
+      <section class="l-preview py-0">
         <div class="container">
           <figure>
             <!-- Image source, which was found, through Google Advanced Image Search: https://webflow.com/blog/quarterly-product-update-march-2022 -->
@@ -158,16 +167,41 @@
       <section class="l-features">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-lg-4 col-md-6 m-lg-0">
+            <div class="col-12 col-lg-4 col-md-6 mb-4 m-lg-0">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title text-info">Easy to use app</h5>
+                  <h5 class="card-title text-info">
+                    <a href="#" class="text-info text-decoration-none">
+                      Easy to use app
+                    </a>
+                  </h5>
                   <p class="card-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
                     a necessitatibus odio quia inventore sint tempore!
                   </p>
-                  <a href="#" class="text-decoration-none text-dark"
-                    >Read more
+                  <a href="#" class="text-decoration-none text-dark">
+                    <span class="me-1">Read more</span>
+                    <i class="fa-sharp fa-solid fa-arrow-right" title="Link">
+                    </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4 col-md-6 mb-4 m-lg-0">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title text-info">
+                    <a href="#" class="text-info text-decoration-none">
+                      Lorem ipsum dolor
+                    </a>
+                  </h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                    a necessitatibus odio quia inventore sint tempore!
+                  </p>
+                  <a href="#" class="text-decoration-none text-dark">
+                    <span class="me-1">Read more</span>
                     <i
                       class="fa-sharp fa-solid fa-arrow-right"
                       title="Link"
@@ -177,39 +211,22 @@
               </div>
             </div>
 
-            <div class="col-12 col-lg-4 col-md-6 m-lg-0">
+            <div class="col-12 col-lg-4 col-md-6 mb-4 m-lg-0">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title text-info">Lorem ipsum dolor</h5>
+                  <h5 class="card-title text-info h5">
+                    <a href="#" class="text-info text-decoration-none">
+                      Lorem ipsum dolor
+                    </a>
+                  </h5>
                   <p class="card-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
                     a necessitatibus odio quia inventore sint tempore!
                   </p>
-                  <a href="#" class="text-decoration-none text-dark"
-                    >Read more
-                    <i
-                      class="fa-sharp fa-solid fa-arrow-right"
-                      title="Link"
-                    ></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-lg-4 col-md-6 m-lg-0">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title text-info h5">Lorem ipsum dolor</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                    a necessitatibus odio quia inventore sint tempore!
-                  </p>
-                  <a href="#" class="text-decoration-none text-dark"
-                    >Read more
-                    <i
-                      class="fa-sharp fa-solid fa-arrow-right"
-                      title="Link"
-                    ></i>
+                  <a href="#" class="text-decoration-none text-dark">
+                    <span class="me-1">Read more</span>
+                    <i class="fa-sharp fa-solid fa-arrow-right" title="Link">
+                    </i>
                   </a>
                 </div>
               </div>
@@ -219,9 +236,11 @@
       </section>
     </main>
 
-    <footer class="l-footer">
-      <div class="container d-flex justify-content-center text-center">
-        <p>
+    <footer class="l-footer py-4">
+      <div
+        class="container d-flex justify-content-center text-center text-white"
+      >
+        <p class="m-0">
           &copy; Copyright 2021 - <span id="currentDate"></span> Fore | All
           Rights Reserved
         </p>
