@@ -1,7 +1,12 @@
-.banner {
-  height: 900px;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+.l-banner {
+  height: 40rem;
   background-image: url('../../../images/black-bg.jpeg');
   background-size: cover;
+  padding-top: 9rem;
+}
+
+@media only screen and (min-width: 31.56rem) {
+  .l-banner {
+    height: min(1000px, calc(39vw + 30rem));
+  }
 }
