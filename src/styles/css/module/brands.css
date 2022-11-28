@@ -1,0 +1,32 @@
+.l-brands img {
+  width: 100%;
+  height: 5.56rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+.l-brands a:first-child > img {
+  width: 3.89rem;
+}
+
+.l-brands a > img {
+  width: 9.44rem;
+}
+
+.l-brands a[href*='fiverr'] > img {
+  width: 6.67rem;
+}
+
+.l-brands a:last-child > img {
+  width: 11.11rem;
+}
+
+@media only screen and (min-width: 31.56rem) {
+  .l-brands img {
+    width: auto;
+    height: auto;
+    margin: 0;
+    object-fit: cover;
+  }
+}
