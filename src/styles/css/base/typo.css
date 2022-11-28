@@ -6,10 +6,38 @@
     url('../../../fonts/Poppins-Regular.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'PoppinsBold';
+  font-display: optional;
+
+  src: url('../../../fonts/Poppins-Bold.woff2') format('woff2'),
+    url('../../../fonts/Poppins-Bold.woff') format('woff');
+}
+
 body {
   font-family: 'Poppins', Arial, Helvetica, Verdana;
 }
 
-.banner p {
+p,
+h1,
+h5 {
+  max-width: 35ch;
+}
+
+.l-banner p {
   color: #c6c6c6;
+}
+
+.l-features a {
+  font-family: 'PoppinsBold', Arial, Helvetica, Verdana;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+@media only screen and (min-width: 42.67rem) {
+  p,
+  h1,
+  h5 {
+    max-width: 70ch;
+  }
 }
