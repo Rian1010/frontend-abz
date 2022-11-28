@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="src/icons/css/all.min.css" />
     <link rel="stylesheet" href="src/styles/main.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <nav class="main-nav navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="l-main-nav navbar navbar-expand-lg navbar-dark">
         <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="" alt="brand" />
+          <a class="navbar-brand" href="/">
+            <img src="src/images/logo-dummy.png" alt="logo" />
           </a>
           <button
             class="navbar-toggler"
@@ -25,6 +26,7 @@
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
+            <span class="d-none">Menu</span>
           </button>
           <div
             class="collapse navbar-collapse justify-content-center"
@@ -41,35 +43,54 @@
                 <a class="nav-link" href="#">Showcase</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Discover</a>
+                <a class="nav-link" href="#">
+                  Discover<span class="text-white">New</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  type="button"
+                  class="btn btn-primary d-lg-none align-self-start"
+                  >Sign Up</a
+                >
               </li>
             </ul>
           </div>
-          <a type="button" class="btn btn-primary">Sign Up</a>
+          <a type="button" class="btn btn-primary d-none d-lg-block">Sign Up</a>
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="banner">
+      <section class="l-banner">
         <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-5">
+          <div class="row justify-content-between">
+            <div class="col-12 col-lg-6">
               <p class="text-muted text-uppercase">
                 Introducing the latest innovation
               </p>
               <h1 class="display-5 text-white">
-                Create all your product mockups easily<span></span>
+                Create all your product mockups easily
+                <i class="fa-regular fa-star" title="Star"></i>
               </h1>
             </div>
-            <div class="col-12 col-md-4 offset-md-2">
+            <div
+              class="
+                col-12 col-lg-4
+                offset-lg-1
+                d-flex
+                justify-content-center
+                flex-column
+              "
+            >
               <p>
                 Fore is a service for creating all your mockup needs. You just
                 drag and drop and the mockup is immediately ready to use
               </p>
               <div class="d-flex gap-3">
-                <a type="button" class="btn btn-primary">
-                  Try for free <span></span>
+                <a type="button" class="btn btn-primary" target="_blank">
+                  Try for free
+                  <i class="fa-sharp fa-solid fa-arrow-right" title="Link"></i>
                 </a>
                 <a type="button" class="btn btn-dark">Get app</a>
               </div>
@@ -77,14 +98,137 @@
           </div>
         </div>
       </section>
-      <section class="preview">
-        <img src="" alt="" />
+
+      <section class="l-preview">
+        <div class="container">
+          <figure>
+            <!-- Image source, which was found, through Google Advanced Image Search: https://webflow.com/blog/quarterly-product-update-march-2022 -->
+            <img
+              src="src/images/tool-prev-200.jpeg"
+              srcset="
+                src/images/tool-prev-200.jpeg   200w,
+                src/images/tool-prev-524.jpeg   524w,
+                src/images/tool-prev-757.jpeg   757w,
+                src/images/tool-prev-943.jpeg   943w,
+                src/images/tool-prev-1154.jpeg 1154w,
+                src/images/tool-prev-1313.jpeg 1313w,
+                src/images/tool-prev-1040.jpeg 1040w
+              "
+              alt="Tool Preview"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="l-brands">
+        <div class="container d-flex align-items-center flex-column">
+          <p class="text-center">Other brands have trusted our service</p>
+          <div
+            class="
+              w-100
+              text-center
+              d-flex
+              justify-content-between
+              align-items-center
+              gap-3
+              flex-row flex-wrap
+            "
+          >
+            <!-- Image source, which was found, through Google Advanced Image Search:
+              -->
+            <a href="https://bolt.eu/de-de/" class="m-auto">
+              <img src="src/images/bolt.svg" alt="Bolt logo" />
+            </a>
+            <a href="https://www.microsoft.com/" class="m-auto">
+              <img src="src/images/microsoft.png" alt="Microsoft Logo" />
+            </a>
+            <a href="https://www.dropbox.com/" class="m-auto">
+              <img src="src/images/dropbox.png" alt="Dropbox Logo" />
+            </a>
+            <a href="https://www.fiverr.com/" class="m-auto">
+              <img src="src/images/fiverr.png" alt="Fiverr Logo" />
+            </a>
+            <a href="https://www.squarespace.com/" class="m-auto">
+              <img src="src/images/squarespace.png" alt="Squarespace Logo" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="l-features">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-4 col-md-6 m-lg-0">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title text-info">Easy to use app</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                    a necessitatibus odio quia inventore sint tempore!
+                  </p>
+                  <a href="#" class="text-decoration-none text-dark"
+                    >Read more
+                    <i
+                      class="fa-sharp fa-solid fa-arrow-right"
+                      title="Link"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4 col-md-6 m-lg-0">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title text-info">Lorem ipsum dolor</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                    a necessitatibus odio quia inventore sint tempore!
+                  </p>
+                  <a href="#" class="text-decoration-none text-dark"
+                    >Read more
+                    <i
+                      class="fa-sharp fa-solid fa-arrow-right"
+                      title="Link"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4 col-md-6 m-lg-0">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title text-info h5">Lorem ipsum dolor</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                    a necessitatibus odio quia inventore sint tempore!
+                  </p>
+                  <a href="#" class="text-decoration-none text-dark"
+                    >Read more
+                    <i
+                      class="fa-sharp fa-solid fa-arrow-right"
+                      title="Link"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="l-footer">
+      <div class="container d-flex justify-content-center text-center">
+        <p>
+          &copy; Copyright 2021 - <span id="currentDate"></span> Fore | All
+          Rights Reserved
+        </p>
+      </div>
+    </footer>
 
     <script src="src/scripts/bootstrap/js/bootstrap.js"></script>
-    <script src="src/scripts/main.js"></script>
+    <script type="module" src="src/scripts/main.js"></script>
   </body>
 </html>
