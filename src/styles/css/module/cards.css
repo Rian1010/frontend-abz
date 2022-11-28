@@ -1,11 +1,18 @@
-.l-features .row > div:first-child .card-title:before {
-  content: '😃 ';
+.l-features .card h5 > a,
+.l-features .card-body > a,
+.l-features .card-body > a span {
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
 }
 
-.l-features .row > div:nth-child(2) .card-title::before {
-  content: '😎 ';
+.l-features .card h5 > a:hover,
+.l-features .card h5 > a:focus,
+.l-features .card-body > a:hover,
+.l-features .card-body > a:focus {
+  color: #0badce !important;
 }
 
-.l-features .row > div:last-child .card-title::before {
-  content: '🤩 ';
+.l-features .card-body > a:hover span {
+  margin-right: 0.5rem !important;
 }
